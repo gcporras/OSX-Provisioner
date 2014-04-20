@@ -12,6 +12,7 @@ List of posible tags:
 
 ###TODO:
 - List of pre-requirements (or script to install them).
+  https://devopsu.com/guides/ansible-mac-osx.html
 - Read yml file with list of brews to install.
 - Brew-cask integration.
 - zsh and my fork of prezto.
