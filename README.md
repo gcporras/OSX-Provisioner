@@ -2,11 +2,15 @@ local-provisioning-ansible-osx
 ==============================
 
 Repository for provisioning my osx machine.
-Run the command:
+To install from scratch. Run the command:
+
+    source bootstrap.sh
+
+If Xcode Command Line Tools and Ansible are already installed, you can run the command:
 
     ansible-playbook site.yml -i hosts_inventory --tags "<tag_names>"
 
-List of posible tags:
+List of tags:
 - debug: For debugging purposes.
 - homebrew: Install homebrew and the list of brews provided.
 
