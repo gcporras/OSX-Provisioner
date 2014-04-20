@@ -1,0 +1,10 @@
+---
+# file: roles/homebrew/tasks/main.yml
+- name: Homebrew is installed?
+  stat: path=/usr/local/bin/brew
+  register: brew_installed
+  tags:
+    - homebrew
+- debug: var=brew_installed
+  tags:
+    - debug

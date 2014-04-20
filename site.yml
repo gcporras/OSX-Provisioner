@@ -1,0 +1,5 @@
+---
+# file: site.yml
+- hosts: osx-dev
+  roles:
+     - homebrew
