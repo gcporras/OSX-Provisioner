@@ -29,6 +29,7 @@ Note: To know if you terminal is bash or zsh. Use `echo $0`
 
 ### To do:
 - [x] Script to install ansible [pre-requirements](https://devopsu.com/guides/ansible-mac-osx.html).
+- [ ] Install [homebrew](https://github.com/Homebrew/homebrew/wiki/Installation)
 - [ ] Brew - playbook who reads from base yml and user local yml (privacy).
 - [ ] Brew-cask integration.
 - [ ] Set zsh as default shell and use my fork of prezto.
