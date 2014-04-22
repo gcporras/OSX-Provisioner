@@ -1,5 +1,5 @@
-local-provisioning-ansible-osx
-==============================
+OSX-Provisioner
+===============
 
 Repository for provisioning my osx machine.
 To install from scratch. Run the command:
