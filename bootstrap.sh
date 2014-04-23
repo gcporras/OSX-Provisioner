@@ -49,7 +49,7 @@ case "$1" in
                 bootstrap
                 #Unset functions
                 unset -f _install_tool
-                unset -f bootstsrap
+                unset -f bootstrap
                 ;;
         test)
                 # Used in the test suite. Avoid executing code
