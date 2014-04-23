@@ -1,0 +1,9 @@
+---
+# file: roles/homebrew/tasks/homebrew-dupes.yml
+
+- name: Tap homebrew/dupes
+  # comming up on version 1.6
+  # homebrew_tap: tap=homebrew/dupes state=present
+  shell: brew tap homebrew/dupes
+  tags:
+    - homebrew
