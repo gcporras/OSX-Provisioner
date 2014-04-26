@@ -27,7 +27,7 @@ bootstrap()
 
   _install_tool "Xcode CLT" "${XCODE_INSTALLED}" "xcode-select --install"
   local xcode_ok=$?
-  _install_tool "Pip" "test -e /usr/local/bin/pip" "sudo pip install ansible"
+  _install_tool "Pip" "test -e /usr/local/bin/pip" "sudo easy_install pip"
   local pip_ok=$?
   _install_tool "Ansible" "test -e /usr/local/bin/ansible" "sudo pip install ansible"
   local ansible_ok=$?
