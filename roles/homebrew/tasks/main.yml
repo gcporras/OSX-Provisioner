@@ -2,3 +2,4 @@
 # file: roles/homebrew/tasks/main.yml
 - include: homebrew-install.yml
 - include: homebrew-dupes.yml
+- include: homebrew-cask-install.yml
