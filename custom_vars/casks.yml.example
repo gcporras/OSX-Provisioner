@@ -1,0 +1,5 @@
+---
+# file: custom_vars/casks.yml
+# This is the place to include my favorite mac applications a.k.a casks
+casks:
+  - adium

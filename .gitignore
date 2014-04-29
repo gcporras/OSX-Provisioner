@@ -20,3 +20,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Files in custom_vars directory
+casks.yml

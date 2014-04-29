@@ -14,3 +14,12 @@
   when: not cask_installed.stat.exists
   tags:
     - homebrew
+
+- name: Install casks
+  shell: brew cask install {{ item }}
+  with_flattened:
+    - core_casks
+    - casks
+  when: item != ""
+  tags:
+    - homebrew
