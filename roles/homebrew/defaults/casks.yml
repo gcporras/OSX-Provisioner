@@ -1,0 +1,12 @@
+---
+# file: roles/homebrew/defaults/casks.yml
+# This is the place to include my favorite mac applications a.k.a casks
+casks:
+  # productivity
+  - caffeine
+  # programming
+  - dash
+  - iterm2
+  # provisioning
+  - vagrant
+  - virtualbox

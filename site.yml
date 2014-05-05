@@ -2,6 +2,6 @@
 # file: site.yml
 - hosts: osx-dev
   vars_files:
-   - custom_vars/casks.yml
+   - ["custom_vars/casks.yml", "roles/homebrew/defaults/casks.yml"]
   roles:
      - homebrew

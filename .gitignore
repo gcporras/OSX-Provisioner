@@ -22,4 +22,4 @@ Temporary Items
 .apdisk
 
 # Files in custom_vars directory
-casks.yml
+custom_vars/casks.yml
