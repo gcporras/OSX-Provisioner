@@ -2,4 +2,3 @@
 # file: roles/homebrew/vars/main.yml
 core_casks:
   - alfred
-  - google-chrome

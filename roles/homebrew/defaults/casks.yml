@@ -2,6 +2,8 @@
 # file: roles/homebrew/defaults/casks.yml
 # This is the place to include my favorite mac applications a.k.a casks
 casks:
+  # browsers
+  - google-chrome
   # productivity
   - caffeine
   # programming
