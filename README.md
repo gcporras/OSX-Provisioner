@@ -8,7 +8,7 @@ To install from scratch, run the command:
 
 If Xcode Command Line Tools and Ansible are already installed, you can run the command:
 
-    ansible-playbook site.yml -i hosts_inventory --tags "<tag_names>"
+    ansible-playbook site.yml -i hosts --tags "<tag_names>"
 
 List of tags:
 - debug: For debugging purposes.
