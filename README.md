@@ -14,6 +14,14 @@ List of tags:
 - debug: For debugging purposes.
 - homebrew: Install homebrew and the list of brews provided.
 
+####Variable precedence
+Variable definition structure was made following the ansible documentation about
+the [subject](http://docs.ansible.com/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable),
+please refer to this in case of doubt.
+
+As a user of OSX-Provider you will only need to define variables in the
+custom_vars folder files as you will see in the following sections.
+
 ####Installing your own applications a.k.a [casks](http://gillesfabio.github.io/homebrew-cask-homepage/):
 Inside the `custom_vars` directory, create a file named `casks.yml` and define
 your caks inside the `casks` variable.
