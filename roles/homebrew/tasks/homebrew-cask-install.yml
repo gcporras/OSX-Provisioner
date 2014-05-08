@@ -1,17 +1,13 @@
 ---
 # file: roles/homebrew/tasks/homebrew-cask-install.yml
-- name: Homebrew-cask is installed?
-  stat: path=/usr/local/bin/brew-cask.rb
-  register: cask_installed
+
+- name: Tap Caskroom
+  homebrew_tap: tap=caskroom/cask state=present
   tags:
     - homebrew
-- debug: var=cask_installed
-  tags:
-    - debug
 
 - name: Install homebrew-cask
-  homebrew: name=phinze/cask/brew-cask state=present
-  when: not cask_installed.stat.exists
+  homebrew: name=brew-cask state=present
   tags:
     - homebrew
 
