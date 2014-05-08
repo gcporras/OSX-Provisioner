@@ -34,7 +34,7 @@ bootstrap()
 
   if [ ${xcode_ok} -eq 0 ] && [ ${pip_ok} -eq 0 ] && [ ${ansible_ok} -eq 0 ]; then
     echo "Starting ansible provisioning..."
-    ansible-playbook site.yml -i hosts_inventory --skip-tags "debug"
+    ansible-playbook site.yml -i hosts --skip-tags "debug"
   else
     echo "Some required packages were not installed! Please fix this."
   fi
