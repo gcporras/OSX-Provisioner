@@ -23,3 +23,8 @@
   when: item != ""
   tags:
     - homebrew
+
+- name: Modify Alfred scope to include Caskroom in search paths
+  shell: brew cask alfred link
+  tags:
+    - homebrew
