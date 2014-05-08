@@ -16,7 +16,7 @@
     - homebrew
 
 - name: Install casks
-  shell: brew cask install {{ item }}
+  homebrew_cask: name={{ item }} state=present
   with_flattened:
     - core_casks
     - casks
