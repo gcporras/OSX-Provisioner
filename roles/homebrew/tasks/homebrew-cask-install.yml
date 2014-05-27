@@ -3,6 +3,14 @@
 
 - name: Tap Caskroom
   homebrew_tap: tap=caskroom/cask state=present
+  when: ansible_distribution_version|int >= '10.9.0'
+  tags:
+    - homebrew
+
+  # caskroom/cask seems not working on old os versions
+- name: Tap Caskroom old os versions
+  homebrew_tap: tap=phinze/cask state=present
+  when: ansible_distribution_version < '10.9.0'
   tags:
     - homebrew
 
